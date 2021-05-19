@@ -1,0 +1,17 @@
+<div class="header">
+    <h1 class="title">Score : {{score}}</h1>
+    <h1 class="title">User Name: {{userName}}</h1>
+    <h1 class="title">Score History: </h1>
+    <div class="row" *ngFor="let score of history ; let i = index">
+        <h3>{{i+1}}. {{score}}</h3>
+    </div>
+    <div class="gameSection">
+        <div class="circlesSection">
+            <div class="circle" *ngFor="let circle of lstCirclesItems; let i = index" (click)="selectCircle(i);" [ngClass]="{'selectedCircle': circle.isSelected=== true}">
+            </div>
+        </div>
+    </div>
+
+    <div class="buttonSection">
+        <button class="startGameBtn" (click)="startGame()"> Start Game</button>
+    </div>

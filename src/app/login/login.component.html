@@ -1,0 +1,16 @@
+<div class="login" *ngIf="!clickOnButton">
+    <div class="form">
+        <p> User Name : <input class="input-field" [(ngModel)]="userName" [value]=this.userName></p>
+    </div>
+    <div class="required" *ngIf="userName===''">
+        User Name is required.
+    </div>
+    <button class="btn" (click)="saveUserName()" [disabled]="userName===''">Start Game</button>
+
+
+</div>
+
+
+
+
+<app-game *ngIf="clickOnButton"></app-game>

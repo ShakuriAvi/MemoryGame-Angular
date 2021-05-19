@@ -1,0 +1,54 @@
+.comp {
+    background-color: red;
+}
+
+.gameSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.startGameBtn {
+    padding: 15px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.circlesSection {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 30px;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.selectedCircle {
+    background-color: yellow;
+}
+
+.row {
+    border: 1px solid #1abc9c;
+    color: #1abc9c;
+    margin-bottom: 10px;
+    width: 10%
+}
+
+.title {
+    color: #1abc9c;
+}
